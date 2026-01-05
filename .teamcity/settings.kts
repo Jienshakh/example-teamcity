@@ -45,6 +45,8 @@ project {
 object Netology : BuildType({
     name = "netology"
 
+    artifactRules = "target/*.jar => build"
+
     vcs {
         root(DslContext.settingsRoot)
     }
